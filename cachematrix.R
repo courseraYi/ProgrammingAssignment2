@@ -54,7 +54,7 @@ cacheSolve <- function(x, ...) {
     ## 然后计算矩阵的逆矩阵
     ivs <- solve(data, ...)
     ## Cache the inverse 
-    ## 最后将计算出的逆矩阵记性缓存
+    ## 最后将计算出的逆矩阵进行缓存
     x$setinverse(ivs)
     ## Return the inverse
     ## 返回计算出的逆矩阵
